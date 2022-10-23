@@ -2,7 +2,7 @@ plugins {
     id 'java'
 }
 
-group 'net.meowcorp.smp'
+group 'net.meowcorp.smp.bootstrap'
 version '1.0-SNAPSHOT'
 
 repositories {
@@ -16,4 +16,12 @@ dependencies {
 
 test {
     useJUnitPlatform()
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'net.meowcorp.smp.bootstrap.Main'
+        )
+    }
 }
