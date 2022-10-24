@@ -1,10 +1,10 @@
 package net.meowcorp.smp.bootstrap;
 
-import javax.swing.*;
+import java.awt.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
-public class InvalidWindow extends JFrame {
+public class InvalidWindow extends Frame {
     public InvalidWindow() {
         this.setTitle("Invalid instance detected!");
         this.setSize(500,250);

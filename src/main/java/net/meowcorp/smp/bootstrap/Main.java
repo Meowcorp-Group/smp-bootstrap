@@ -2,12 +2,12 @@ package net.meowcorp.smp.bootstrap;
 
 import java.lang.management.ManagementFactory;
 import java.lang.management.RuntimeMXBean;
-import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 
 public class Main {
     public static void main(String[] args) {
-        if (System.getProperty("minecraftInstance").equals("smpCompatible.instance")) {
+        if (Objects.equals(System.getProperty("minecraftInstance"), "smpCompatible.instance")) {
             System.out.println("Detected compatible instance!");
 
             RuntimeMXBean bean = ManagementFactory.getRuntimeMXBean();
