@@ -16,6 +16,7 @@ public class Main {
             MainWindow mainWindow = new MainWindow(jvmArgs);
         } else {
             System.out.println("Detected incompatible instance!");
+
             InvalidWindow invalidWindow = new InvalidWindow();
         }
     }

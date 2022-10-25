@@ -3,6 +3,7 @@ package net.meowcorp.smp.bootstrap;
 import java.awt.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.util.List;
 
 public class InvalidWindow extends Frame {
     public InvalidWindow() {
